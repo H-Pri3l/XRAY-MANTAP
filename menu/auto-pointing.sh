@@ -18,13 +18,13 @@ mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 #
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=mantapxsl.my.id
-SUB_DOMAIN=onichan-${sub}.mantapxsl.my.id
-NS_DOMAIN=zerosl-${sub}.mantapxsl.my.id
-CF_ID=slinfinity69@gmail.com
-CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c3)
+subsl=$(</dev/urandom tr -dc a-z0-9 | head -c3)
+DOMAIN=warungawan.my.id
+SUB_DOMAIN=xray-${sub}.warungawan.my.id
+NS_DOMAIN=sxray-${sub}.warungawan.my.id
+CF_ID=akrnawan25@gmail.com
+CF_KEY=9e2ffa0ac14915a576c8eac49fd5dcd7485f7
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
